@@ -27,7 +27,7 @@ let siteMetadata = {
         {
             name: "About",
             url: "/about"
-        }
+        },
 //       {
 //           name: "Blog",
 //            url: "/blog"
@@ -36,10 +36,10 @@ let siteMetadata = {
 //            name: "Music",
 //            url: "/portfolio"
 //        },
-//         {
-//            name: "Contact",
-//            url: "/contact"
-//        }
+         {
+            name: "Contact",
+            url: "/contact"
+        }
     ],
     footerLinks: [
 //        {
