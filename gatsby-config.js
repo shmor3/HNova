@@ -28,6 +28,10 @@ let siteMetadata = {
             name: "About",
             url: "/about"
         },
+        {
+            name: "Subscribe",
+            url: "/subscribe"
+        }
 //       {
 //           name: "Blog",
 //            url: "/blog"
@@ -90,8 +94,8 @@ let siteMetadata = {
     ],
     contact: {
         /* Leave the below value completely empty (no space either) if you don't want a contact form. */
-        api_url: "./test.json",
-        description: `Fill Fill Fill Fill Fill Fill Fill Fill Fill Fill `,
+        api_url: "",
+        description: ``,
         mail: "hydronovamusic@gmail.com",
         phone: "",
         address: ""
@@ -114,7 +118,13 @@ module.exports = {
                         options: {
                             maxWidth: 1280
                         }
-                    }
+                    },
+                    {
+                        resolve: 'gatsby-plugin-mailchimp',
+                        options: {
+                            endpoint: 'https://hydronovamusic.us19.list-manage.com/subscribe/post?u=8e1b61df40f7a3686138eda22&amp;id=c57474e36f',
+                        },
+                      },
                 ]
             }
         },
